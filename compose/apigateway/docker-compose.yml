@@ -1,0 +1,13 @@
+version: "2"
+services:
+    apigateway:
+        image: shahedk/apigateway:latest
+        restart: always
+        volumes:
+          - "~/docker/config/apigateway/appsettings.json:/app/appsettings.json"
+        ports:
+          - "8090:80"
+networks:
+  default:
+    external:
+      name: devtest
