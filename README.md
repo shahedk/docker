@@ -1,4 +1,4 @@
-## A list of commonly used docker commands, utility scripts and compose files for frequently used containers
+## A collection of commonly used docker commands, utility scripts and compose files
 
 #### Install docker on Ubuntu 18.x
 ```
