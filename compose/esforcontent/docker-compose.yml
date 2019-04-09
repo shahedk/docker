@@ -1,0 +1,19 @@
+version: "2"
+services:
+  esforcontent:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.5.4
+    restart: always
+    ports:
+      - "9200:9200"
+    networks:
+      default:
+        aliases:
+          - esforcontent
+    volumes:
+      - "~/docker/data/esforcontent/:/usr/share/elasticsearch/data"
+          
+networks:
+  default:
+    external:
+      name: devtest
+
