@@ -1,6 +1,6 @@
 # docker-compose.yml
 
-### All compose files follow the following folder structure:
+### All compose files follow the following folder structure to map host path:
 
 * ~/docker
 * ~/docker/data/[container name]
