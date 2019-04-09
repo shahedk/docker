@@ -6,7 +6,7 @@ apt update
 apt install docker.io
 ```
 
-#### Run a docker container (say nginx)
+#### Run a docker container (eg. nginx)
 
 ```
 docker run --name=my_nginx -p 80:80 -p 443:443 -v "~/docker/data/nginx/conf.d:/etc/nginx/conf.d" -d nginx
