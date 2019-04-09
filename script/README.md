@@ -1,4 +1,3 @@
 # Utility scripts for docker 
 
-1. Remove all unused volumes
-2. Remove all unused images
+###### This folder contains commonly used utility scripts for docker management. For example, free up hard-drive space my removing unused volumes and images.
