@@ -1,1 +1,1 @@
-mkdir -p ~/docker && mkdir -p ~/docker/log && mkdir -p ~/docker/log/jira && mkdir -p ~/docker/data && mkdir -p ~/docker/data/jira && 
+mkdir -p ~/docker && mkdir -p ~/docker/log && mkdir -p ~/docker/log/jira && mkdir -p ~/docker/data && mkdir -p ~/docker/data/jira
