@@ -2,16 +2,17 @@
 
 ### A collection of commonly used docker commands, utility scripts and compose files
 
-##### Install docker on Ubuntu 18.x
+#### Install docker on Ubuntu 18.x
 ```
 apt update
 apt install docker.io
+apt install docker-compose
 ```
 
-##### Run a docker container (eg. nginx)
+#### Run a docker container (eg. nginx)
 
 ```
-docker run --name=my_nginx -p 80:80 -p 443:443 -v "~/docker/data/nginx/conf.d:/etc/nginx/conf.d" -d nginx
+docker run --name=my_nginx --restart=always -p 80:80 -p 443:443 -v "~/docker/data/nginx/conf.d:/etc/nginx/conf.d" -d nginx
 ```
 
 Some useful options: 
@@ -19,3 +20,6 @@ Some useful options:
 * **-p** to map a port with host network. By default containers run in isolated network unless we explicitly specify to run on host network (eg. --network=host). 
 * **-v** to map host folder (or file) to folder (or file) inside container
 * Specify **-d** to run it on background and get command prompt back
+* **--restart** defines the restart behaviour. For example, in this case we ask docker engine to restart the container if its down for unexpected reasons (eg. host machine restart).
+
+Running a container using the above command syntax is quick and easy. But as the configuration settings are added, it becomes less readable. In my experience, I found using the *docker-compose.yml* is a better choice. Examples of the commonly used scenarios for docker-compose file are available in the [compose](https://github.com/shahedk/docker/tree/master/compose) folder. 
