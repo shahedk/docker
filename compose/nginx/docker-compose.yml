@@ -1,0 +1,21 @@
+version: "2"
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - "~/docker/data/nginx/conf.d:/etc/nginx/conf.d"
+      - "~/docker/data/nginx/log:/var/log/nginx"
+      - "~/docker/data/nginx/ssl:/etc/nginx/ssl"
+      - "~/docker/data/nginx/scripts:/scripts"
+    
+          
+networks:
+  default:
+    external:
+      name: devtest
+

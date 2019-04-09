@@ -1,0 +1,1 @@
+mkdir -p ~/docker && mkdir -p ~/docker/data && mkdir -p ~/docker/data/nginx && cp docker-files/data/conf.d/default.conf ~/docker/data/nginx/conf.d
