@@ -1,5 +1,6 @@
 # My Docker Cheat Sheet
 
+*Note: The detailed documentation of docker api and services are available at [docs.docker.com](https://docs.docker.com).*
 ### A collection of commonly used docker commands, utility scripts and compose files
 
 #### Install docker on Ubuntu 18.x
@@ -23,3 +24,4 @@ Some useful options:
 * **--restart** defines the restart behaviour. For example, in this case we ask docker engine to restart the container if its down for unexpected reasons (eg. host machine restart).
 
 Running a container using the above command syntax is quick and easy. But as the configuration settings are added, it becomes less readable. In my experience, I found using the *docker-compose.yml* is a better choice. Examples of the commonly used scenarios for docker-compose file are available in the [compose](https://github.com/shahedk/docker/tree/master/compose) folder. 
+
