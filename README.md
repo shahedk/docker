@@ -1,12 +1,14 @@
-## A collection of commonly used docker commands, utility scripts and compose files
+# My Docker Cheat Sheet
 
-#### Install docker on Ubuntu 18.x
+### A collection of commonly used docker commands, utility scripts and compose files
+
+##### Install docker on Ubuntu 18.x
 ```
 apt update
 apt install docker.io
 ```
 
-#### Run a docker container (eg. nginx)
+##### Run a docker container (eg. nginx)
 
 ```
 docker run --name=my_nginx -p 80:80 -p 443:443 -v "~/docker/data/nginx/conf.d:/etc/nginx/conf.d" -d nginx
