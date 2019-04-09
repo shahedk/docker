@@ -1,0 +1,20 @@
+version: "2"
+services:
+  jira:
+    image: cptactionhank/atlassian-jira:latest
+    restart: always
+    ports:
+      - "8080:8080"
+    volumes:
+      - "~/docker/log/jira:/opt/atlassian/jira/logs"
+      - "~/docker/data/jira:/var/atlassian/jira"
+    networks:
+      default:
+        aliases:
+          - jira
+          
+networks:
+  default:
+    external:
+      name: devtest
+
