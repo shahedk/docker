@@ -1,1 +1,1 @@
-mkdir -p ~/docker && mkdir -p ~/docker/config && mkdir -p ~/docker/config/apigateway && cp docker-files/config/appsettings.json ~/docker/config/apigateway/appsettings.json
+mkdir -p ~/docker && mkdir -p ~/docker/data && mkdir -p ~/docker/data/apigateway && mkdir -p ~/docker/config && mkdir -p ~/docker/config/apigateway && cp docker-files/config/appsettings.json ~/docker/config/apigateway/appsettings.json

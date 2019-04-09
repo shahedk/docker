@@ -5,6 +5,7 @@ services:
         restart: always
         volumes:
           - "~/docker/config/apigateway/appsettings.json:/app/appsettings.json"
+          - "~/docker/data/apigateway/db/:/app/db/"
         ports:
           - "8090:80"
 networks:
