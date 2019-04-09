@@ -25,3 +25,22 @@ Some useful options:
 
 Running a container using the above command syntax is quick and easy. But as the configuration settings are added, it becomes less readable. In my experience, I found using the *docker-compose.yml* is a better choice. Examples of the commonly used scenarios for docker-compose file are available in the [compose](https://github.com/shahedk/docker/tree/master/compose) folder. 
 
+#### Starting and Stopping
+
+* `docker start` starts a container
+* `docker stop` stops a running container
+* `docker kill` sends a SIGKILL to a running container
+* `docker rm` removes the container
+
+
+#### Info
+
+* `docker ps` shows running containers
+* `docker ps -a` shows running and stopped containers
+* `docker stats` shows containers resource usage statistics.
+* `docker port` shows public facing port of container.
+
+
+#### Executing Commands
+
+* `docker exec` to execute a command in container. For example, use `docker exec -it [container_name] /bin/bash` to attach a new shell process to a running container.
