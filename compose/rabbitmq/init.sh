@@ -1,0 +1,1 @@
+mkdir -p ~/docker && mkdir -p ~/docker/data && mkdir -p ~/docker/data/rabbitmq && cp docker-files/data/enabled_plugins ~/docker/data/rabbitmq/enabled_plugins
