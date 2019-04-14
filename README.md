@@ -8,6 +8,8 @@
 apt update
 apt install docker.io
 apt install docker-compose
+
+usermod -aG docker $(whoami)
 ```
 
 #### Run a docker container (eg. nginx)
