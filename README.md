@@ -6,9 +6,14 @@
 #### Install docker on Ubuntu 18.x
 ```
 apt update
+
+# Install docker
 apt install docker.io
+
+# Install docker compose
 apt install docker-compose
 
+# Add permission to current user to access docker
 usermod -aG docker $(whoami)
 ```
 
