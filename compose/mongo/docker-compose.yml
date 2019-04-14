@@ -3,11 +3,8 @@ services:
   mongodb:
     image: mongo:latest
     restart: always
-    environment:
-    - "MONGO_DATA_DIR=/data/db"
-    - "MONGO_LOG_DIR=/dev/null"
     volumes:
-    - "~/docker/data/mongodb/db:/data/db"
+    - "~/docker/data/mongodb:/data"
     ports:
     - "27017:27017"
     

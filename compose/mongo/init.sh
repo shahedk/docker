@@ -1,1 +1,1 @@
-mkdir -p ~/docker && mkdir -p ~/docker/data && mkdir -p ~/docker/data/mongo && mkdir -p ~/docker/data/mongo/db
+mkdir -p ~/docker && mkdir -p ~/docker/data && mkdir -p ~/docker/data/mongodb && mkdir -p ~/docker/data/mongodb/db
