@@ -1,7 +1,7 @@
 version: "2"
 services:
  elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.0.0
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.5.4
     restart: always
     ports:
       - "9200:9200"
@@ -10,7 +10,7 @@ services:
         aliases:
           - elasticsearch
     volumes:
-      - "~/docker/data/esforcontent/:/usr/share/elasticsearch/data"
+      - "~/docker/data/elasticsearch/:/usr/share/elasticsearch/data"
 
                
 networks:
