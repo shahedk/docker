@@ -12,6 +12,8 @@ services:
       - "~/docker/data/nginx/log:/var/log/nginx"
       - "~/docker/data/nginx/ssl:/etc/nginx/ssl"
       - "~/docker/data/nginx/scripts:/scripts"
+      - "~/docker/data/nginx/certbot/conf:/etc/letsencrypt"
+      - "~/docker/data/nginx/certbot/www:/var/www/certbot"
     
           
 networks:
