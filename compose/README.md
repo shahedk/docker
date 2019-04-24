@@ -1,6 +1,6 @@
-After downloading these files into linux machine, give execution rights to `init.sh` script file using the following code
+After downloading these files into linux machine, give execution rights to all `init.sh` scripts using the following code (assuming the code is checked out at ~/github/docker folder)
 ```
-chmod 766 init.sh
+find ~/github/docker -type f -iname "*.sh" -exec chmod +x {} \;
 ```
 
 
