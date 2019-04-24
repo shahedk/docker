@@ -1,0 +1,1 @@
+mkdir -p ~/docker && mkdir -p ~/docker/log && mkdir -p ~/docker/log/elc && mkdir -p ~/docker/config && mkdir -p ~/docker/config/elc && mkdir -p ~/docker/config/elc/EncryptionKey

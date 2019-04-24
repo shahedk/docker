@@ -1,0 +1,23 @@
+version: "2"
+services:
+ elc:
+    image: registry.gitlab.com/shahedk/elc/webapp:latest
+    restart: always
+    volumes:
+      - "~/docker/data/elc/elc.db:/app/elc.db"
+      - "~/docker/config/elc/appsettings.json:/app/appsettings.json"
+      - "~/docker/config/elc/EncryptionKey:/app/EncryptionKey"
+      - "~/docker/log/elc:/app/Logs"
+    ports:
+      - "8083:80"   
+    networks:
+      default:
+        aliases:
+          - elc
+
+               
+networks:
+  default:
+    external:
+      name: devtest
+
