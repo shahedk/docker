@@ -1,13 +1,17 @@
 version: "2"
 services:
     apigateway:
+        container_name: apigateway
         image: shahedk/apigateway:latest
         restart: always
+        networks:
+          default:
+            aliases:
+              - apigateway
         volumes:
           - "~/docker/config/apigateway/appsettings.json:/app/appsettings.json"
           - "~/docker/data/apigateway/db/:/app/db/"
-        ports:
-          - "8090:80"
+        
 networks:
   default:
     external:
