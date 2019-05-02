@@ -1,1 +1,1 @@
-mkdir -p ~/docker && mkdir -p ~/docker/log && mkdir -p ~/docker/log/elc && mkdir -p ~/docker/config && mkdir -p ~/docker/config/elc && mkdir -p ~/docker/config/elc/EncryptionKey
+mkdir -p ~/docker && mkdir -p ~/docker/log && mkdir -p ~/docker/log/elc && mkdir -p ~/docker/data && mkdir -p ~/docker/data/elc && mkdir -p ~/docker/config && mkdir -p ~/docker/config/elc && mkdir -p ~/docker/config/elc/EncryptionKey && cp docker-files/elc.db ~/docker/data/elc/elc.db && cp docker-files/appsettings.json ~/docker/config/elc/appsettings.json
