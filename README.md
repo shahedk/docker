@@ -46,7 +46,7 @@ Running a container using the above command syntax is quick and easy. But as the
 * `docker ps -a` shows running and stopped containers
 * `docker stats` shows containers resource usage statistics.
 * `docker port` shows public facing port of container.
-
+* `docker inspect -f '{{ .Mounts }}'` shows list of volume maps
 
 #### Executing Commands
 
