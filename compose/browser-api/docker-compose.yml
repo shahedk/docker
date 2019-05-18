@@ -1,0 +1,15 @@
+version: "2"
+services:
+    browserapi:
+        container_name: browserapi
+        image: shahedk/browser-api:latest
+        restart: always
+        networks:
+          default:
+            aliases:
+              - browserapi
+              
+networks:
+  default:
+    external:
+      name: devtest
