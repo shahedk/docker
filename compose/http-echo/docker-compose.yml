@@ -1,0 +1,17 @@
+version: "2"
+services:
+    httpecho:
+        container_name: httpecho
+        image: shahedk/http-echo:latest
+        restart: always
+        ports:
+          - "8092:80"
+        networks:
+          default:
+            aliases:
+              - httpecho
+              
+networks:
+  default:
+    external:
+      name: devtest
