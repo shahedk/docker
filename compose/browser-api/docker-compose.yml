@@ -4,6 +4,8 @@ services:
         container_name: browserapi
         image: shahedk/browser-api:latest
         restart: always
+        ports:
+          - "8091:80"
         networks:
           default:
             aliases:
