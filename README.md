@@ -1,6 +1,5 @@
 # My Docker Cheat Sheet
 
-*Note: The detailed documentation of docker api and services are available at [docs.docker.com](https://docs.docker.com).*
 ### A collection of commonly used docker commands, utility scripts and compose files
 
 #### Install docker on Ubuntu 18.x
