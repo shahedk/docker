@@ -16,7 +16,7 @@ sudo apt install docker-compose
 sudo usermod -aG docker $(whoami)
 ```
 
-#### Run a docker container (eg. nginx)
+#### Example: Following script will start a nginx container on docker
 
 ```
 docker run --name=my_nginx --restart=always -p 80:80 -p 443:443 -v "~/docker/data/nginx/conf.d:/etc/nginx/conf.d" -d nginx
