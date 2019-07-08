@@ -47,6 +47,14 @@ Running a container using the above command syntax is quick and easy. But as the
 * `docker port` shows public facing port of container.
 * `docker inspect -f '{{ .Mounts }}'` shows list of volume maps
 
+#### Stop / Remove all containers & images
+
+* List all containers: `docker ps -aq`
+* Stop all running containers: `docker stop $(docker ps -aq)`
+* Remove all containers: `docker rm $(docker ps -aq)`
+* Remove all images: `docker rmi $(docker images -q)`
+
+
 #### Executing Commands
 
 * `docker exec` to execute a command in container. For example, use `docker exec -it [container_name] /bin/bash` to attach a new shell process to a running container.
