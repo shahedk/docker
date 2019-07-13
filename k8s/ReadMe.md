@@ -1,4 +1,4 @@
-#### Pull an Image from a Private Registry
+### Pull an Image from a Private Registry
 
 *Step 1:* Create this Secret, naming it `regcred`:
 ```
