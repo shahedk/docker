@@ -58,3 +58,7 @@ Running a container using the above command syntax is quick and easy. But as the
 #### Executing Commands
 
 * `docker exec` to execute a command in container. For example, use `docker exec -it [container_name] /bin/bash` to attach a new shell process to a running container.
+
+
+#### FAQ
+* [SSH into the Docker VM (MobyLinuxVM) on Windows](https://blog.jongallant.com/2017/11/ssh-into-docker-vm-windows/)
