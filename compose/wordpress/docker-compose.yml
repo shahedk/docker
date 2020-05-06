@@ -25,4 +25,9 @@ services:
        WORDPRESS_DB_PASSWORD: wordpress
        WORDPRESS_DB_NAME: wordpress
 volumes:
-    db_data: {}
+    db_data:
+       driver: local
+       driver_opts:
+          type: 'none'
+          o: bind
+          device: '/docker/data/wordpress'
