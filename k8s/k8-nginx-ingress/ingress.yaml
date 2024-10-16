@@ -1,0 +1,27 @@
+# ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hello-world-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx   # Add this line
+  rules:
+  - host: hello-world.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: hello-world
+            port:
+              number: 80
+      - path: /v2/
+        pathType: Prefix
+        backend:
+          service:
+            name: hello-world-2
+            port:
+              number: 80
